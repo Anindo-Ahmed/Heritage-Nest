@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar  container mx-auto">
+    <div className="navbar container mx-auto">
       <div className="navbar-start hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
