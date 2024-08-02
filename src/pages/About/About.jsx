@@ -6,8 +6,8 @@ import Team from "../../components/Team";
 const About = () => {
   return (
     <div>
-      <div className="min-h-[360px] bg-aboutframe bg-no-repeat bg-contain"></div>
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="min-h-[360px] bg-aboutframe bg-no-repeat bg-cover"></div>
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 mt-14">
         <div className="bg-[#FDF0E7] p-6">
           <h1 className="text-2xl text-[#D95D0F] font-bold">2k+</h1>
           <p className="mb-12">New Flat Listed</p>

@@ -3,6 +3,7 @@ import Root from "../layout/Root";
 import Home from "../pages/Home/Home";
 import Buy from "../pages/Buy/Buy";
 import About from "../pages/About/About";
+import CardDetails from "../pages/CardDetails/CardDetails";
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
         {
             path: '/buy',
             element: <Buy/>
+        },
+        {
+            path: '/buy/:id',
+            element: <CardDetails/>
         },
         {
             path: '/about',

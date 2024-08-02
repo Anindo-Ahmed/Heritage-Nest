@@ -15,13 +15,13 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
-import { Link } from "react-router-dom";
 
-const Popular = () => {
-  return (
-    <div className="container mx-auto mt-8">
+
+const NearbyProperties = () => {
+    return (
+        <div className="container mx-auto mt-28">
       <div className="flex justify-between items-center">
-        <h2 className="text-3xl font-semibold">Popular Properties</h2>
+        <h2 className="text-3xl font-semibold">New Listed Properties</h2>
         <a
           href="#"
           target="_blank"
@@ -50,8 +50,7 @@ const Popular = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <Link to="buy/:id">
-                <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
+          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
             <div className="card w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
@@ -75,9 +74,7 @@ const Popular = () => {
                 <p className="font-mont text-2xl font-semibold my-4">$250000</p>
               </div>
             </div>
-                </div>
-            </Link>
-          
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
@@ -162,7 +159,7 @@ const Popular = () => {
         </SwiperSlide>
       </Swiper>
     </div>
-  );
+    );
 };
 
-export default Popular;
+export default NearbyProperties;
