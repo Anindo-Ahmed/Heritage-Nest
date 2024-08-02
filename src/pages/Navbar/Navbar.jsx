@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo.png"
 const Navbar = () => {
   return (
-    <div className="navbar container mx-auto">
-      <div className="navbar-start hidden lg:flex">
+    <div className="navbar container mx-auto font-inter">
+      <div className="navbar-start hidden lg:flex text-lg">
         <ul className="menu menu-horizontal px-1">
           <li>
             <NavLink to="/buy">Buy</NavLink>
-          </li>
+          </li>      
           <li>
             <NavLink to="/sell">Sell</NavLink>
           </li>
@@ -40,6 +40,9 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
+              <NavLink to="/home">Home</NavLink>
+            </li>
+            <li>
               <NavLink to="/buy">Buy</NavLink>
             </li>
             <li>
@@ -50,10 +53,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link to="/home"><img src={logo} alt="logo" className="w-11"/></Link>
       </div>
-      <div className="navbar-end">
-        <NavLink to="/signin" className="px-4 py-2 rounded-md text-blue-500 bg-blue-200">Sign In</NavLink>
+      <div className="navbar-end gap-6">        
+        <NavLink to="/signin" className="px-4 py-2 text-sm font-semibold rounded-md text-blue-500 bg-blue-200">Sign In</NavLink>
       </div>
     </div>
   );

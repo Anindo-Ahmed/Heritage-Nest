@@ -19,9 +19,9 @@ import { Keyboard, Scrollbar, Navigation, Pagination } from "swiper/modules";
 
 const NewListed = () => {
     return (
-        <div className="container mx-auto mt-28">
-      <div className="flex justify-between items-center">
-        <h2 className="text-3xl font-semibold">New Listed Properties</h2>
+        <div className="container mx-auto lg:mt-28 mt-10">
+      <div className="flex justify-between items-center p-2">
+        <h2 className="text-xl lg:text-3xl font-semibold">New Listed Properties</h2>
         <a
           href="#"
           target="_blank"
@@ -32,7 +32,7 @@ const NewListed = () => {
       </div>
       {/* card section */}
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         centeredSlides={false}
         slidesPerGroupSkip={1}
         grabCursor={true}
@@ -50,12 +50,12 @@ const NewListed = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -77,12 +77,12 @@ const NewListed = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -104,12 +104,12 @@ const NewListed = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -131,12 +131,12 @@ const NewListed = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>

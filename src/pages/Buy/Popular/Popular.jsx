@@ -20,8 +20,8 @@ import { Link } from "react-router-dom";
 const Popular = () => {
   return (
     <div className="container mx-auto mt-8">
-      <div className="flex justify-between items-center">
-        <h2 className="text-3xl font-semibold">Popular Properties</h2>
+      <div className="flex justify-between items-center p-2">
+        <h2 className="text-xl lg:text-3xl font-semibold">Popular Properties</h2>
         <a
           href="#"
           target="_blank"
@@ -32,7 +32,7 @@ const Popular = () => {
       </div>
       {/* card section */}
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         centeredSlides={false}
         slidesPerGroupSkip={1}
         grabCursor={true}
@@ -50,13 +50,13 @@ const Popular = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-            <Link to="buy/:id">
-                <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+            <Link to="/buy/:id">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -80,12 +80,13 @@ const Popular = () => {
           
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <Link to='/buy/:id'>
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -105,14 +106,16 @@ const Popular = () => {
               </div>
             </div>
           </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <Link to="/buy/:id">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -132,14 +135,16 @@ const Popular = () => {
               </div>
             </div>
           </div>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+          <Link to="/buy/:id">
+          <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
-              <div className="flex items-center justify-between px-4 font-poppins my-2">
+              <div className="flex items-center justify-between lg:px-4 px-6 font-poppins my-2">
                 <div className="bg-[#C5E2FF] py-2 px-1 text-sm font-normal rounded-md">
                   Apartment
                 </div>
@@ -159,6 +164,7 @@ const Popular = () => {
               </div>
             </div>
           </div>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </div>

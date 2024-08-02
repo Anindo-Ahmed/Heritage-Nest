@@ -6,7 +6,7 @@ import NewListed from "./NewListed/NewListed";
 const Buy = () => {
   return (
     <div className="font-mont">
-        <div className="min-h-[550px] bg-frame bg-no-repeat bg-cover"></div>
+        <div className="min-h-[550px] bg-frame bg-no-repeat bg-cover "></div>
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 mt-14">
             <div className="bg-[#FDF0E7] p-6">
                 <h1 className="text-2xl text-[#D95D0F] font-bold">2k+</h1>
@@ -45,10 +45,10 @@ const Buy = () => {
         <NewListed/>
         <Testimonials/>
         <div className="py-12 bg-[#FDF0E7] mt-10">
-            <div className="container mx-auto flex justify-between">
+            <div className="container mx-auto flex flex-col lg:flex-row justify-between p-2">
             <div className=" ">
                 <h2 className="text-xl font-semibold text-[#101828] font-mont">Post your Property for free</h2>
-                <p className="font-poppins text-[#475467] mt-6">List it on Your Propriety and get genuine leads</p>
+                <p className="font-poppins text-[#475467] my-6">List it on Your Propriety and get genuine leads</p>
             </div>
             <div>
                 <button className="bg-[#F06224] py-4 px-7 rounded-lg text-white font-inter font-semibold text-lg">Post Property</button>

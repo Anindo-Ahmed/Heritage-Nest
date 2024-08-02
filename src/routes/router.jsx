@@ -4,15 +4,17 @@ import Home from "../pages/Home/Home";
 import Buy from "../pages/Buy/Buy";
 import About from "../pages/About/About";
 import CardDetails from "../pages/CardDetails/CardDetails";
+import ErrorPages from "../pages/errorPages";
+import Signin from "../components/Signin";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Root/>,
-      errorElement: <errorPages/>,
+      errorElement: <ErrorPages/>,
       children: [
         {
-            path: '/',
+            path: '/home',
             element: <Home/>
         },
         {
@@ -26,6 +28,10 @@ const router = createBrowserRouter([
         {
             path: '/about',
             element: <About/>
+        },
+        {
+            path: '/signin',
+            element: <Signin/>
         }
       ]
     },

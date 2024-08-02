@@ -21,7 +21,7 @@ const NearbyProperties = () => {
     return (
         <div className="container mx-auto mt-28">
       <div className="flex justify-between items-center">
-        <h2 className="text-3xl font-semibold">New Listed Properties</h2>
+        <h2 className="text-3xl font-semibold">Others Nearby Properties</h2>
         <a
           href="#"
           target="_blank"
@@ -32,7 +32,7 @@ const NearbyProperties = () => {
       </div>
       {/* card section */}
       <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         centeredSlides={false}
         slidesPerGroupSkip={1}
         grabCursor={true}
@@ -51,7 +51,7 @@ const NearbyProperties = () => {
       >
         <SwiperSlide>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
@@ -78,7 +78,7 @@ const NearbyProperties = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
@@ -105,7 +105,7 @@ const NearbyProperties = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>
@@ -132,7 +132,7 @@ const NearbyProperties = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="grid grid-cols-1 lg:grid-cols-3 mt-7">
-            <div className="card w-96 shadow-xl">
+            <div className="card lg:w-96 shadow-xl">
               <figure>
                 <img src={cardImg4} alt="property image" />
               </figure>

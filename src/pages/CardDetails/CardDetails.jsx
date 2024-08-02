@@ -55,12 +55,12 @@ const CardDetails = () => {
         <p className=" text-2xl font-extrabold my-4">$250000</p>
       </div>
       <hr className="w-1/2 my-2" />
-      <div className="flex gap-6">
+      <div className="flex flex-col lg:flex-row gap-6">
         <div className="font-mont">
           <img src={img1} alt="" />
           <div className="mt-6 p-3 bg-[#F9FAFB]">
             <h2 className="text-2xl font-semibold">Overview</h2>
-            <div className="grid grid-cols-4 shadow-xl mt-5 p-5 border-x-0 border-x-gray-200">
+            <div className="grid lg:grid-cols-4 shadow-xl mt-5 p-5 border-x-0 border-x-gray-200">
               <div className="flex items-center gap-2">
                 <FaBed />
                 <p>2 Beds</p>
@@ -78,7 +78,7 @@ const CardDetails = () => {
                 <p>Fully Furnished</p>
               </div>
             </div>
-            <div className="grid grid-cols-4 font-mont my-7 p-3 justify-around">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 font-mont my-7 p-3 justify-around">
               <div>
                 <p className="text-[#5c5c5c] font-normal">Carpet Area</p>
                 <p className="font-medium">2000 sqft</p>
@@ -97,7 +97,7 @@ const CardDetails = () => {
                 <p className="font-medium">1</p>
               </div>
             </div>
-            <div className="grid grid-cols-4 font-mont my-7 p-3 justify-around">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 font-mont my-7 p-3 justify-around">
               <div>
                 <p className="text-[#5c5c5c] font-normal">Facing</p>
                 <p className="font-medium">North - East</p>
@@ -171,7 +171,7 @@ const CardDetails = () => {
       </div>
       <div className="mt-6 p-3 bg-[#F9FAFB]">
         <h2 className="text-2xl font-semibold">Amenities</h2>
-        <div className="grid grid-cols-4 gap-8 font-mont my-7 p-3 justify-around">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 font-mont my-7 p-3 justify-around">
           <div className="flex items-center gap-2">
             <PiBatteryChargingVertical />
             <p className="font-medium">Power Back Up</p>
